@@ -1,0 +1,36 @@
+from random import randint
+computador = randint(0,2)
+itens = ('pedra', 'papel', 'tesoura')
+print('Vamos começar agora o desafio do JOKENPO!Escolha uma das opções a seguir:')
+print('''Suas opções:
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA''')
+jogador = int(input('Qual jogada você quer fazer?'))
+print('-='*20)
+print('O computador escolheu {}'.format(itens[computador]))
+print('Você escolheu {}'.format(itens[jogador]))
+print('-='*20)
+if computador == 0: #computador jogou PEDRA
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('Você venceu!!!')
+    else:
+        print('Você perdeu,infelizmente!')
+if computador == 1: #computador escolheu PAPEL
+    if jogador == 0:
+        print('Você perdeu,infelizmente!')
+    elif jogador == 1:
+        print('EMPATE')
+    else:
+        print('Você venceu!!!')
+if computador == 2: #computador escolheu TESOURA
+    if jogador == 0:
+        print('Você venceu!!')
+    elif jogador == 1:
+        print('Você perdeu,infelizmente!')
+    else:
+        print('EMPATE')
+print('-='*20)
+print('Obrigado por participar!')
