@@ -1,0 +1,11 @@
+m = str(input('Digite uma frase qualquer:')).strip().upper()
+c1 = (m.count('A'))    # contagem de letras A
+c2 = (m.count('D'))    # contagem de letras D
+c3 = (m.count('O'))    # contagem de letras O
+c4 = (m.count('P'))    # contagem de letras P
+c5 = (m.count('Q'))    # contagem de letras Q
+c6 = (m.count('R'))    # contagem de letras R
+c7 = (m.count('B'))    # contagem de letras B
+print('Considerando que as letras A,D,O,P,Q e R possuem um buraco no seu interior, a letra B possui dois buracos e '
+      'as outras letras do alfabeto não tem nenhum buraco, então a frase digitada pelo usuário tem {} buracos'.format(
+    c1 + c2 + c3 + c4 + c5 + c6 + 2*c7))
